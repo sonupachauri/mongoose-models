@@ -13,12 +13,12 @@ const todoSchema = new mongoose.Schema(
     },
     createdBy: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: User,
+      ref: "User",
     },
     subTodos: [
       {
         type: mongoose.Schema.Types.ObjectId,
-        ref: SubTodo,
+        ref: "SubTodo",
       },
     ], // array of subtodos
   },
